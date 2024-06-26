@@ -35,7 +35,7 @@ def processCommand(c):
             link=ml.music(s)
             webbrowser.open(link)
         elif "open valorant" in c.lower():
-            #ta.closeall() #this will close the running applications so make sure to change path in terminateall.py before uncommenting this
+            #ta.closeall() #this will close the running applications except jarvis so make sure to change path in terminateall.py before uncommenting this
             subprocess.Popen(["C:\\Users\\Admin\\Riot Games\\VALORANT\\live"])# change path to your valorant client
         elif "open ghost" in c.lower():# change name to whichever game you want play then change the path as well
             #ta.closeall()
@@ -50,8 +50,8 @@ def processCommand(c):
         elif "open whatsapp" in c.lower():
             cd="start whatsapp:"
             try:
-                subprocess.Popen(cd,shell=True)# if whatsapp is installed
-                #webbrowser.open("https://web.whatsapp.com/") #uncomment the earlier part if you want to use whatsapp web
+                subprocess.Popen(cd,shell=True)# if whatsapp is not installed comment out this part
+                #webbrowser.open("https://web.whatsapp.com/") #uncomment this part if you want to use whatsapp web
             except Exception as e:
                 print(e)
         else:
