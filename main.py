@@ -40,7 +40,7 @@ def processCommand(c):
         elif "open ghost" in c.lower():# change name to whichever game you want play then change the path as well
             #ta.closeall()
             subprocess.Popen(["D:\\Ghost of Tsushima DIRECTORS CUT\\GhostOfTsushima.exe"])# change the path of the game you want to start
-        elif "open Xdefiant" in c.lower():
+        elif "open Xdefiant" in c.lower():# change name to whichever app you want open then change the path as well
             #ta.closeall()
             subprocess.Popen(["C:\\Users\\Admin\\Desktop\\XDefiant.url"])# change path to your game/app client
         elif "open gmail" in c.lower():
