@@ -1,7 +1,7 @@
 import psutil
-def closeall():
+def closeall():# wherever this function is called it will close all running processes except jarvis
 # Define the process name to keep running
-    process_to_keep = "C:\\Users\\Admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk"
+    process_to_keep = "C:\\Users\\Admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk" #change this path to the path of application where the code will be running
 
     # Get all running processes
     running_processes = list(psutil.process_iter())
