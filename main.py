@@ -24,9 +24,9 @@ def processCommand(c):
         elif "open twitch" in c.lower():
             webbrowser.open("https://www.twitch.tv/")
         elif "open linkedin" in c.lower():
-            webbrowser.open("https://www.linkedin.com/in/piyush-nihalani-b8baa426a/")
+            webbrowser.open("https://www.linkedin.com/in/piyush-nihalani-b8baa426a/")#change to your linkedin profile
         elif "open anime" in c.lower():
-            webbrowser.open("https://www.crunchyroll.com/")
+            webbrowser.open("https://www.crunchyroll.com/")#change to your fav anime website
         elif c.lower().startswith("play"):
             song=c.lower().split()
             song.pop(0)
