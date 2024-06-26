@@ -43,10 +43,10 @@ def processCommand(c):
         elif "open Xdefiant" in c.lower():
             #ta.closeall()
             subprocess.Popen(["C:\\Users\\Admin\\Desktop\\XDefiant.url"])# change path to your game/app client
-        elif "open mail" in c.lower():
-            subprocess.Popen(['start', 'mailto:'])
+        elif "open gmail" in c.lower():
+            webbrowser.open("link of your gmail")#add your link of gmail
         elif "open telegram" in c.lower():
-            subprocess.Popen(["C:\\Users\\Admin\\Desktop\\Telegram.lnk"])
+            subprocess.Popen(["C:\\Users\\Admin\\Desktop\\Telegram.lnk"])# change path to your telegram app
         elif "open whatsapp" in c.lower():
             cd="start whatsapp:"
             try:
