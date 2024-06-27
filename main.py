@@ -30,8 +30,7 @@ def processCommand(c):
         elif c.lower().startswith("play"):
             song=c.lower().split()
             song.pop(0)
-            son=' '.join(song)
-            s=son.replace(' ','')
+            s=''.join(song)
             link=ml.music(s)
             webbrowser.open(link)
         elif "open valorant" in c.lower():
